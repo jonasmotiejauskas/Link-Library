@@ -1,0 +1,72 @@
+html, body{
+  height: 100%;
+}
+
+.screen-wrapper {
+  min-height: 92%;
+}
+
+footer {
+  min-height: 8%;
+  margin: 0;
+}
+
+.section {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.backcolor-1 {
+  background-color: #8BC34A;
+}
+
+.backcolor-2 {
+  background-color: #DCEDC8;
+}
+
+.backcolor-3 {
+  background-color: #689F38;
+}
+
+.backcolor-4 {
+  background-color: #4CAF50;
+}
+
+.accentcolor {
+  color: #9E9E9E;
+}
+
+.primarytextcolor {
+  color: #EEEEEE;
+}
+
+.textcolor-1 {
+  color: #8BC34A;
+}
+
+.textcolor-4 {
+  color: #4CAF50;
+}
+
+#paginationactive {
+  color: #8BC34A;
+}
+
+#paginationselected {
+  background-color: #8BC34A;
+  border-color: #8BC34A;
+}
+
+.navsearch {
+  width: 12.3em;
+  margin: 0.3em 2em;
+}
+
+#addlinkform {
+  max-width: 500px;
+}
+
+#addlinkform textarea {
+  resize: none;
+}

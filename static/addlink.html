@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="images/linkliblogo.ico">
+
+  <title>Link Library</title>
+  <!-- My defined styles -->
+  <link href="css/linklib.css" rel="stylesheet" />
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Social buttons -->
+  <link href="bootstrap/css/bootstrap-social.css" rel="stylesheet" />
+  <!-- icons for social buttons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Plugins -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="screen-wrapper backcolor-2">
+    <!-- title -->
+    <header class="pt-3 pb-2 text-center backcolor-1">
+      <h1 class="display-4 primarytextcolor">Link Library</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark backcolor-4">
+      <!-- search -->
+      <form class="ml-0 mr-auto form-inline my-0 navsearch" role="search" maxlength="100">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search Link">
+          <input type="submit" class="fa btn text-white backcolor-1" value="&#xf002;">
+        </div>
+      </form>
+      <!-- navbar collapse-->
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar">
+        <!-- all buttons -->
+        <ul class="nav navbar-nav navbar-left mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="overview.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="addlink.html">Add Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Add Group</a>
+          </li>
+        </ul>
+        <!-- signout -->
+        <ul class="nav navbar-nav navbar-left">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Sign Out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- form to add link -->
+    <form id="addlinkform" class="mx-auto py-3 pl-3 pr-3" action="overview.html" method="post">
+      <h2 class="mb-0 pb-3">Add a new Link</h2>
+      <fieldset class="form-group">
+        <input type="url" class="form-control mb-3" id="linkurl" placeholder="Link URL" maxlength="300" required="true">
+        <input type="text" class="form-control mb-3" id="linkname" placeholder="Name" maxlength="50" required="true">
+        <select class="form-control mb-3" id="linkgroup">
+          <option value="" selected>No Group Selected</option>
+        </select>
+        <input type="number" class="form-control" name="linkpriority" placeholder="Priority" min="1" max="100" pattern="[0-9]*" inputmode="numeric">
+        <!-- <textarea name="text" rows="4" wrap="soft" placeholder="Description" class="form-control" form="addlinkform" maxlength="300"></textarea> -->
+      </fieldset>
+      <input type="submit" name="addlink" value="Add Link" class="primarytextcolor btn backcolor-1 mb-2 btn-block">
+    </form>
+
+  </div>
+  <!-- footer -->
+  <footer class="primarytextcolor footer-copyright py-3 text-center backcolor-3">
+    2018 Jonas Motiejauskas <a href="mailto:jonasmotiejauskas@gmail.com" class="fa fa-envelope fa-1x primarytextcolor"></a>
+  </footer>
+</body>
+
+</html>

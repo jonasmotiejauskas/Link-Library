@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="images/linkliblogo.ico">
+
+  <title>Link Library</title>
+  <!-- My defined styles -->
+  <link href="css/linklib.css" rel="stylesheet" />
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Social buttons -->
+  <link href="bootstrap/css/bootstrap-social.css" rel="stylesheet" />
+  <!-- icons for social buttons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Plugins -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="screen-wrapper backcolor-2">
+    <!-- title -->
+    <header class="pt-3 pb-2 text-center backcolor-1">
+      <h1 class="display-4 primarytextcolor">Link Library</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark backcolor-4">
+      <!-- search -->
+      <form class="ml-0 mr-auto form-inline my-0 navsearch" role="search" maxlength="100">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search Link">
+          <input type="submit" class="fa btn text-white backcolor-1" value="&#xf002;">
+        </div>
+      </form>
+      <!-- navbar collapse-->
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar">
+        <!-- all buttons -->
+        <ul class="nav navbar-nav navbar-left mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="overview.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="addlink.html">Add Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Add Group</a>
+          </li>
+        </ul>
+        <!-- signout -->
+        <ul class="nav navbar-nav navbar-left">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Sign Out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- pagination (Scrapped for now)-->
+    <!-- <div class="d-flex justify-content-center align-items-center">
+      <ul class="pagination m-0 py-2 pr-0 mx-left">
+        <li class="page-item disabled">
+          <a class="page-link backcolor-3" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item active"><a id="paginationselected" class="page-link" href="#">1</a></li>
+        <li class="page-item textcolor-1 backcolor-1"><a id="paginationactive" class="page-link" href="#">2</a></li>
+        <li class="page-item"><a id="paginationactive" class="page-link" href="#">3</a></li>
+        <li class="page-item"><a id="paginationactive" class="page-link" href="#">4</a></li>
+        <li class="page-item">
+          <a id="paginationactive" class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </div> -->
+
+    <div class="d-flex justify-content-center align-content-center flex-wrap">
+      <div class="m-2 p-0 border border-dark rounded">
+        <img src="images/example.png" class="p-0 img-fluid img-thumbnail img-rounded" alt="Example" />
+        <p class="m-0 text-center">Link name</p>
+      </div>
+      <div class="m-2 p-0 border border-dark rounded">
+        <img src="images/example.png" class="p-0 img-fluid img-thumbnail img-rounded" alt="Example" />
+        <p class="m-0 text-center">Link name</p>
+      </div>
+      <div class="m-2 p-0 border border-dark rounded">
+        <img src="images/example.png" class="p-0 img-fluid img-thumbnail img-rounded" alt="Example" />
+        <p class="m-0 text-center">Link name</p>
+      </div>
+      <div class="m-2 p-0 border border-dark rounded">
+        <img src="images/example.png" class="p-0 img-fluid img-thumbnail img-rounded" alt="Example" />
+        <p class="m-0 text-center">Link name</p>
+      </div>
+      <div class="m-2 p-0 border border-dark rounded">
+        <img src="images/example.png" class="p-0 img-fluid img-thumbnail img-rounded" alt="Example" />
+        <p class="m-0 text-center">Link name</p>
+      </div>
+      <div class="m-2 p-0 border border-dark rounded">
+        <img src="images/example.png" class="p-0 img-fluid img-thumbnail img-rounded" alt="Example" />
+        <p class="m-0 text-center">Link name</p>
+      </div>
+      <div class="m-2 p-0 border border-dark rounded">
+        <img src="images/example.png" class="p-0 img-fluid img-thumbnail img-rounded" alt="Example" />
+        <p class="m-0 text-center">Link name</p>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="primarytextcolor footer-copyright py-3 text-center backcolor-3">
+    2018 Jonas Motiejauskas <a href="mailto:jonasmotiejauskas@gmail.com" class="fa fa-envelope fa-1x primarytextcolor"></a>
+  </footer>
+</body>
+
+</html>
